@@ -1,6 +1,5 @@
 part of '../home_page.dart';
 
-
 class _CategoryCard extends StatelessWidget {
   final CategoryModel? category;
   final VoidCallback? onCategoryTap;
@@ -11,6 +10,7 @@ class _CategoryCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final provider = Provider.of<ThemeProvider>(context);
 
     return Container(
       width: 70.0,
@@ -27,7 +27,12 @@ class _CategoryCard extends StatelessWidget {
             CircleAvatar(
               radius: 25.0,
               backgroundColor: theme.backgroundColor,
-              child: SvgPicture.asset(category!.icon!),
+              child: SvgPicture.asset(
+                category!.icon!,
+                color: (provider.isLightTheme)
+                    ? ColorLight.fontTitle
+                    : ColorDark.fontTitle,
+              ),
             ),
             Spacer(),
             AutoSizeText(

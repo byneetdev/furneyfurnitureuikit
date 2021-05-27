@@ -5,15 +5,18 @@ import 'package:flutter_feather_icons/flutter_feather_icons.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 // ignore: import_of_legacy_library_into_null_safe
 import 'package:flutter_swiper/flutter_swiper.dart';
-import 'package:furneyfurnitureuikit/src/helpers/screens.dart';
-import 'package:furneyfurnitureuikit/src/list_item/category_list.dart';
-import 'package:furneyfurnitureuikit/src/list_item/product_list.dart';
-import 'package:furneyfurnitureuikit/src/list_item/swiper_list.dart';
-import 'package:furneyfurnitureuikit/src/models/category_model.dart';
-import 'package:furneyfurnitureuikit/src/models/product_model.dart';
-import 'package:furneyfurnitureuikit/src/widgets/custom_app_bar.dart';
-import 'package:furneyfurnitureuikit/src/widgets/custom_shake_transtition.dart';
-import 'package:furneyfurnitureuikit/src/widgets/product_card.dart';
+import 'package:furneyfurnitureuikit/src/helpers/colors.dart';
+import '../../helpers/screens.dart';
+import '../../list_item/category_list.dart';
+import '../../list_item/product_list.dart';
+import '../../list_item/swiper_list.dart';
+import '../../models/category_model.dart';
+import '../../models/product_model.dart';
+import '../../providers/theme_provider.dart';
+import '../../widgets/custom_app_bar.dart';
+import '../../widgets/custom_shake_transtition.dart';
+import 'package:provider/provider.dart';
+import '../../widgets/product_card.dart';
 
 import '../../helpers/constants.dart';
 

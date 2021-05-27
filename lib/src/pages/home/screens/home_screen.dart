@@ -11,7 +11,7 @@ class HomeScreen extends StatelessWidget {
           IconButton(
             icon: Icon(FeatherIcons.bell),
             onPressed: () {
-              //TODO: Navigate to Notifications Screen
+              context.read<ThemeProvider>().changeTheme();
             },
           )
         ],
