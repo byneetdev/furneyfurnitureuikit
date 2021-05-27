@@ -143,9 +143,9 @@ class _VerticalType extends StatelessWidget {
                 children: [
                   CustomNetworkImage(
                     image: product!.images!.first,
-                    width: Screens.width(context) / 3.3,
-                    height: Screens.width(context) / 3.3,
-                    fit: BoxFit.contain,
+                    width: 80.0,
+                    height: 80.0,
+                    fit: BoxFit.cover,
                   ),
                   SizedBox(width: Screens.width(context) / 35),
                   Column(
@@ -216,7 +216,8 @@ class _GridType extends StatelessWidget {
           children: [
             CustomNetworkImage(
               image: product!.images!.first,
-              fit: BoxFit.fitWidth,
+              fit: BoxFit.cover,
+              borderRadius: BorderRadius.circular(Const.GLOBAL_RADIUS),
               // height: 9,
               // width: 9,
             ),
